@@ -1,0 +1,126 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+body {
+    background:#ccc;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+.container {
+    width:400px;
+
+    background:#fff;
+    margin:2rem auto;
+}
+
+.card-profile {
+    padding:0.8rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-img {
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+.logo-img {
+    width:70px;
+    height:auto;
+
+
+}
+
+.card-container {
+    position: relative;
+
+}
+
+.card-img {
+
+    display:block;
+    width:100%;
+    height:500px;
+    border-radius: 10px;
+
+
+}
+.card-img-container::after {
+    content: "";
+    width:100%;
+    height:100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 10px;
+
+}
+
+/* Eren     color:#d24545;
+   Zeke     Color: #b7ff00
+   Levi     color : #87b6ff;
+   Reiner   Color : #37ff49;
+
+*/
+.card-name {
+    position: absolute;
+    bottom:20px;
+    color:#87b6ff;
+    left:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 5px black;
+}
+.card-like, .card-dislike {
+    width:150px;
+    height:70px;
+    position: absolute;
+    top:33px;
+    left:6px;
+    transform: rotate(-30deg);
+    display: none;
+}
+.card-buttons {
+    text-align: center;
+    padding-top:0.5rem;
+
+}
+
+.btn {
+    background:#fff;
+    padding:0.5rem 1.2rem;
+    border-radius: 50%;
+    font-size:2rem;
+    border:none;
+    box-shadow: 0 10px 20px #cdcdcd;
+    margin:0.5rem 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dislike {
+    color:#E82D70;
+}
+
+.like {
+    color:#00D894;  
+}
+
+.clicked {
+    background:#e7e7e7;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
